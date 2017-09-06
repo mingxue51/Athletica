@@ -1,0 +1,1647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5D281A59FC3DC1F75B6C77 /* Pods_AthleticaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E497348F14AE93E8A81A377B /* Pods_AthleticaUITests.framework */; };
+		D8C1B80736048AF904416FD5 /* Pods_AthleticaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585057D020143784DD115182 /* Pods_AthleticaTests.framework */; };
+		DA1E6A7CE838D728F3F0FA8C /* Pods_Athletica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F174CF6508A8DD591604FF1 /* Pods_Athletica.framework */; };
+		E911440A1F43571D00FCD05B /* OneSignalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91144091F43571C00FCD05B /* OneSignalUtil.swift */; };
+		E9173B5A1F40D9B700391BF6 /* AuthorizedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9173B591F40D9B700391BF6 /* AuthorizedUsersViewController.swift */; };
+		E9173B5C1F418D4900391BF6 /* BlockedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9173B5B1F418D4800391BF6 /* BlockedUsersViewController.swift */; };
+		E9270EA71F0AE33A00CC5B18 /* AthleteStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9270EA61F0AE33900CC5B18 /* AthleteStreamsViewController.swift */; };
+		E9270EA91F0B4CED00CC5B18 /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9270EA81F0B4CED00CC5B18 /* StreamTableViewCell.swift */; };
+		E9270EAB1F0B7F1300CC5B18 /* StartLiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9270EAA1F0B7F1300CC5B18 /* StartLiveStreamViewController.swift */; };
+		E92710B01F0BE6D900CC5B18 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E92710AF1F0BE6D900CC5B18 /* UIImage+ResizeAdditions.m */; };
+		E930C0E01F06911000BB5D82 /* AthleteNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0DF1F06911000BB5D82 /* AthleteNewsViewController.swift */; };
+		E930C0E21F06926C00BB5D82 /* AthleteMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0E11F06926C00BB5D82 /* AthleteMenuViewController.swift */; };
+		E930C0E41F06A0D300BB5D82 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0E31F06A0D300BB5D82 /* Util.swift */; };
+		E930C0E61F06A9FA00BB5D82 /* ChooseProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0E51F06A9FA00BB5D82 /* ChooseProfileViewController.swift */; };
+		E930C0E81F06DE5500BB5D82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E930C0E71F06DE5500BB5D82 /* GoogleService-Info.plist */; };
+		E930C0EB1F06E05B00BB5D82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0E91F06E05B00BB5D82 /* Constants.swift */; };
+		E930C0EC1F06E05B00BB5D82 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0EA1F06E05B00BB5D82 /* Reachability.swift */; };
+		E930C0EE1F07C97300BB5D82 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0ED1F07C97300BB5D82 /* Article.swift */; };
+		E930C0F01F07CF7800BB5D82 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0EF1F07CF7800BB5D82 /* ArticleTableViewCell.swift */; };
+		E930C0F21F095D2000BB5D82 /* AthleteArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0F11F095D2000BB5D82 /* AthleteArticleViewController.swift */; };
+		E930C0F41F09977A00BB5D82 /* AthleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E930C0F31F09977A00BB5D82 /* AthleteProfileViewController.swift */; };
+		E931B2691F056F8200095225 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E931B2681F056F8200095225 /* BaseViewController.swift */; };
+		E931B26B1F056FA900095225 /* AthleteSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E931B26A1F056FA900095225 /* AthleteSignupViewController.swift */; };
+		E931B26D1F05771100095225 /* MyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E931B26C1F05771100095225 /* MyFloatingLabelTextField.swift */; };
+		E932F9631F0A860100F475A3 /* ExpyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E932F9621F0A860100F475A3 /* ExpyTableView.swift */; };
+		E932F9661F0A8C5D00F475A3 /* ProfileAboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E932F9651F0A8C5D00F475A3 /* ProfileAboutTableViewCell.swift */; };
+		E932F9681F0A8C7F00F475A3 /* ProfileAboutDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E932F9671F0A8C7F00F475A3 /* ProfileAboutDetailTableViewCell.swift */; };
+		E9370B441F34572A009F0AD3 /* AthleteProfileBioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B421F34572A009F0AD3 /* AthleteProfileBioTableViewCell.swift */; };
+		E9370B451F34572A009F0AD3 /* AthleteProfileBioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B431F34572A009F0AD3 /* AthleteProfileBioTableViewCell.xib */; };
+		E9370B481F34679A009F0AD3 /* AthleteProfileSchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B461F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.swift */; };
+		E9370B491F34679A009F0AD3 /* AthleteProfileSchoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B471F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.xib */; };
+		E9370B4D1F349FC9009F0AD3 /* SoccerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B4B1F349FC9009F0AD3 /* SoccerTableViewCell.swift */; };
+		E9370B4E1F349FC9009F0AD3 /* SoccerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B4C1F349FC9009F0AD3 /* SoccerTableViewCell.xib */; };
+		E9370B511F34AAF9009F0AD3 /* BasketballTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B4F1F34AAF9009F0AD3 /* BasketballTableViewCell.swift */; };
+		E9370B521F34AAF9009F0AD3 /* BasketballTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B501F34AAF9009F0AD3 /* BasketballTableViewCell.xib */; };
+		E9370B551F34AB09009F0AD3 /* SwimmingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B531F34AB09009F0AD3 /* SwimmingTableViewCell.swift */; };
+		E9370B561F34AB09009F0AD3 /* SwimmingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B541F34AB09009F0AD3 /* SwimmingTableViewCell.xib */; };
+		E9370B591F34AB20009F0AD3 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B571F34AB20009F0AD3 /* TrackTableViewCell.swift */; };
+		E9370B5A1F34AB20009F0AD3 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B581F34AB20009F0AD3 /* TrackTableViewCell.xib */; };
+		E9370B5D1F34AB2E009F0AD3 /* TennisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B5B1F34AB2E009F0AD3 /* TennisTableViewCell.swift */; };
+		E9370B5E1F34AB2E009F0AD3 /* TennisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B5C1F34AB2E009F0AD3 /* TennisTableViewCell.xib */; };
+		E9370B611F34AB3F009F0AD3 /* SoftballTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B5F1F34AB3F009F0AD3 /* SoftballTableViewCell.swift */; };
+		E9370B621F34AB3F009F0AD3 /* SoftballTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B601F34AB3F009F0AD3 /* SoftballTableViewCell.xib */; };
+		E9370B651F34AB4B009F0AD3 /* GolfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B631F34AB4B009F0AD3 /* GolfTableViewCell.swift */; };
+		E9370B661F34AB4B009F0AD3 /* GolfTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B641F34AB4B009F0AD3 /* GolfTableViewCell.xib */; };
+		E9370B691F34AB58009F0AD3 /* VolleyballTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B671F34AB58009F0AD3 /* VolleyballTableViewCell.swift */; };
+		E9370B6A1F34AB58009F0AD3 /* VolleyballTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B681F34AB58009F0AD3 /* VolleyballTableViewCell.xib */; };
+		E9370B6D1F34AB67009F0AD3 /* LacrosseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B6B1F34AB67009F0AD3 /* LacrosseTableViewCell.swift */; };
+		E9370B6E1F34AB67009F0AD3 /* LacrosseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B6C1F34AB67009F0AD3 /* LacrosseTableViewCell.xib */; };
+		E9370B711F34AB75009F0AD3 /* HockeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B6F1F34AB75009F0AD3 /* HockeyTableViewCell.swift */; };
+		E9370B721F34AB75009F0AD3 /* HockeyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B701F34AB75009F0AD3 /* HockeyTableViewCell.xib */; };
+		E9370B751F34AB8B009F0AD3 /* RowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B731F34AB8B009F0AD3 /* RowingTableViewCell.swift */; };
+		E9370B761F34AB8B009F0AD3 /* RowingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B741F34AB8B009F0AD3 /* RowingTableViewCell.xib */; };
+		E9370B791F34AB9C009F0AD3 /* WaterpoloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B771F34AB9C009F0AD3 /* WaterpoloTableViewCell.swift */; };
+		E9370B7A1F34AB9C009F0AD3 /* WaterpoloTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B781F34AB9C009F0AD3 /* WaterpoloTableViewCell.xib */; };
+		E9370B7D1F34ABB3009F0AD3 /* GymnasticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B7B1F34ABB3009F0AD3 /* GymnasticsTableViewCell.swift */; };
+		E9370B7E1F34ABB3009F0AD3 /* GymnasticsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B7C1F34ABB3009F0AD3 /* GymnasticsTableViewCell.xib */; };
+		E9370B811F34ABC1009F0AD3 /* SkiingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B7F1F34ABC1009F0AD3 /* SkiingTableViewCell.swift */; };
+		E9370B821F34ABC1009F0AD3 /* SkiingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B801F34ABC1009F0AD3 /* SkiingTableViewCell.xib */; };
+		E9370B8A1F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B881F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.swift */; };
+		E9370B8B1F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B891F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.xib */; };
+		E9370B8E1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B8C1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.swift */; };
+		E9370B8F1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B8D1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.xib */; };
+		E9370B921F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9370B901F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.swift */; };
+		E9370B931F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9370B911F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.xib */; };
+		E9393AF91F39DDED0004F732 /* AthleteProfileStreamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393AF81F39DDED0004F732 /* AthleteProfileStreamsTableViewCell.swift */; };
+		E9393AFB1F3AD7E20004F732 /* AthleteProfileKudosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393AFA1F3AD7E20004F732 /* AthleteProfileKudosTableViewCell.swift */; };
+		E9393AFD1F3AEEFD0004F732 /* Kudo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393AFC1F3AEEFD0004F732 /* Kudo.swift */; };
+		E9393AFF1F3B5CEC0004F732 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393AFE1F3B5CEC0004F732 /* FollowingViewController.swift */; };
+		E9393B011F3B748C0004F732 /* FollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393B001F3B748C0004F732 /* FollowingTableViewCell.swift */; };
+		E9393B051F3B755B0004F732 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393B041F3B755B0004F732 /* FollowersViewController.swift */; };
+		E9393B071F3B76270004F732 /* FollowersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393B061F3B76270004F732 /* FollowersTableViewCell.swift */; };
+		E9393B0B1F402D5E0004F732 /* AWSUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9393B0A1F402D5E0004F732 /* AWSUtil.swift */; };
+		E93A93A51F062ADB0039BC94 /* AthleteLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A93A41F062ADB0039BC94 /* AthleteLoginViewController.swift */; };
+		E93A93A71F0635880039BC94 /* AthleleForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A93A61F0635880039BC94 /* AthleleForgotPasswordViewController.swift */; };
+		E954DE5D1F2647C100E0A22A /* CoachProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954DE5C1F2647C100E0A22A /* CoachProfileViewController.swift */; };
+		E954DE611F266AB200E0A22A /* ScheduleStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E954DE601F266AB200E0A22A /* ScheduleStreamViewController.swift */; };
+		E958139E1F27AD2900B05965 /* AthleteScheduleStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958139D1F27AD2900B05965 /* AthleteScheduleStreamViewController.swift */; };
+		E95813A11F29E3FC00B05965 /* AthleteInviteCoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95813A01F29E3FB00B05965 /* AthleteInviteCoachesViewController.swift */; };
+		E95813A31F29E5CB00B05965 /* InviteCoachesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95813A21F29E5CB00B05965 /* InviteCoachesTableViewCell.swift */; };
+		E95813A51F29E8B900B05965 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95813A41F29E8B900B05965 /* CheckBox.swift */; };
+		E958BD2D1F1C5F7C00B454D7 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD2C1F1C5F7C00B454D7 /* PlayerViewController.swift */; };
+		E958BD2F1F1D4B7800B454D7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD2E1F1D4B7800B454D7 /* SearchViewController.swift */; };
+		E958BD321F1DFBB200B454D7 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD311F1DFBB200B454D7 /* CategoryCollectionViewCell.swift */; };
+		E958BD341F1E30CA00B454D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD331F1E30CA00B454D7 /* User.swift */; };
+		E958BD361F1E3D3900B454D7 /* SearchPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD351F1E3D3900B454D7 /* SearchPeopleTableViewCell.swift */; };
+		E958BD381F1E3D7B00B454D7 /* SearchStreamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD371F1E3D7B00B454D7 /* SearchStreamsTableViewCell.swift */; };
+		E958BD3A1F1E594200B454D7 /* UpcomingStreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD391F1E594100B454D7 /* UpcomingStreamsViewController.swift */; };
+		E958BD3C1F1E66AF00B454D7 /* UpcomingStreamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD3B1F1E66AF00B454D7 /* UpcomingStreamsTableViewCell.swift */; };
+		E958BD3E1F1F4C7100B454D7 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E958BD3D1F1F4C7100B454D7 /* UpgradeViewController.swift */; };
+		E96BC5C31F1FD7E80007CDAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BC5C21F1FD7E80007CDAA /* SettingsViewController.swift */; };
+		E96BC5C61F1FF06A0007CDAA /* ProProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BC5C51F1FF06A0007CDAA /* ProProfileViewController.swift */; };
+		E96BC5C91F208B290007CDAA /* FanProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BC5C81F208B290007CDAA /* FanProfileViewController.swift */; };
+		E96BC5CC1F20DD980007CDAA /* CoachSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96BC5CB1F20DD980007CDAA /* CoachSignupViewController.swift */; };
+		E96DF5681F49D7120079E03A /* NewMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96DF5671F49D7120079E03A /* NewMessageTableViewCell.swift */; };
+		E96DF56A1F49DB650079E03A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96DF5691F49DB650079E03A /* ChatViewController.swift */; };
+		E96DF56C1F4A19B80079E03A /* ChatContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96DF56B1F4A19B80079E03A /* ChatContainerViewController.swift */; };
+		E96DF56E1F4ACA2E0079E03A /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96DF56D1F4ACA2E0079E03A /* ViewImageViewController.swift */; };
+		E986165B1F33472700A60670 /* AthleteProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986165A1F33472700A60670 /* AthleteProfile.swift */; };
+		E986165D1F33592A00A60670 /* AthleteEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E986165C1F33592A00A60670 /* AthleteEditProfileViewController.swift */; };
+		E9885F3F1F1143DE001C1CA7 /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9885F3E1F1143DE001C1CA7 /* LiveStreamViewController.swift */; };
+		E9885F411F114499001C1CA7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F401F114499001C1CA7 /* libz.tbd */; };
+		E9885F431F1144A6001C1CA7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F421F1144A6001C1CA7 /* libc++.tbd */; };
+		E9885F451F1144AF001C1CA7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F441F1144AF001C1CA7 /* AudioToolbox.framework */; };
+		E9885F471F1144B9001C1CA7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F461F1144B9001C1CA7 /* AVFoundation.framework */; };
+		E9885F491F1144C2001C1CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F481F1144C2001C1CA7 /* CoreGraphics.framework */; };
+		E9885F4B1F1144CE001C1CA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F4A1F1144CE001C1CA7 /* CoreLocation.framework */; };
+		E9885F4D1F1144DA001C1CA7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F4C1F1144DA001C1CA7 /* CoreMedia.framework */; };
+		E9885F4F1F1144E2001C1CA7 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F4E1F1144E2001C1CA7 /* CoreVideo.framework */; };
+		E9885F511F1144EC001C1CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F501F1144EC001C1CA7 /* Foundation.framework */; };
+		E9885F531F1144F3001C1CA7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F521F1144F3001C1CA7 /* QuartzCore.framework */; };
+		E9885F551F1144FF001C1CA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F541F1144FF001C1CA7 /* SystemConfiguration.framework */; };
+		E9885F571F114507001C1CA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F561F114507001C1CA7 /* UIKit.framework */; };
+		E9885F591F114510001C1CA7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F581F114510001C1CA7 /* VideoToolbox.framework */; };
+		E9885F641F1145DD001C1CA7 /* libbambuser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F621F1145DD001C1CA7 /* libbambuser.a */; };
+		E9885F651F1145DD001C1CA7 /* libbambuserplayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9885F631F1145DD001C1CA7 /* libbambuserplayer.a */; };
+		E9885F671F116BE8001C1CA7 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9885F661F116BE8001C1CA7 /* Stream.swift */; };
+		E9885F691F116DA5001C1CA7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9885F681F116DA5001C1CA7 /* Network.swift */; };
+		E9885F6B1F123880001C1CA7 /* FirebaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9885F6A1F123880001C1CA7 /* FirebaseUtil.swift */; };
+		E99CF38F1F459D10001C3176 /* ViewCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF38E1F459D10001C3176 /* ViewCoachViewController.swift */; };
+		E99CF3911F459D21001C3176 /* ViewFanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF3901F459D21001C3176 /* ViewFanViewController.swift */; };
+		E99CF3931F459D2D001C3176 /* ViewProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF3921F459D2D001C3176 /* ViewProViewController.swift */; };
+		E99CF3951F459D3B001C3176 /* ViewAthleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF3941F459D3B001C3176 /* ViewAthleteViewController.swift */; };
+		E99CF3991F470686001C3176 /* GiveKudosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF3981F470686001C3176 /* GiveKudosViewController.swift */; };
+		E9B84E2F1F4738780019B165 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B84E2E1F4738780019B165 /* FavoritesViewController.swift */; };
+		E9B84E311F473BA20019B165 /* CoachEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B84E301F473BA20019B165 /* CoachEditProfileViewController.swift */; };
+		E9B84E331F4747770019B165 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B84E321F4747770019B165 /* ImageUtil.swift */; };
+		E9BC2ABC1F4DEC0800E12BA4 /* Privacy.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9BC2ABB1F4DEC0800E12BA4 /* Privacy.rtf */; };
+		E9BC2ABE1F4DED0C00E12BA4 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2ABD1F4DED0C00E12BA4 /* PrivacyViewController.swift */; };
+		E9BC2AC01F4DF58E00E12BA4 /* Terms.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E9BC2ABF1F4DF58E00E12BA4 /* Terms.rtf */; };
+		E9BC2AC21F4DF65F00E12BA4 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2AC11F4DF65F00E12BA4 /* TermsViewController.swift */; };
+		E9BC2AC41F4E885C00E12BA4 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2AC31F4E885C00E12BA4 /* OnboardViewController.swift */; };
+		E9BC2AC61F4E8B4B00E12BA4 /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BC2AC51F4E8B4B00E12BA4 /* Onboard.storyboard */; };
+		E9BC2ACC1F4E91F600E12BA4 /* CustomPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC2AC81F4E91F600E12BA4 /* CustomPage.xib */; };
+		E9BC2ACD1F4E91F600E12BA4 /* CustomPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2AC91F4E91F600E12BA4 /* CustomPage.swift */; };
+		E9BC2ACE1F4E91F600E12BA4 /* CustomOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC2ACA1F4E91F600E12BA4 /* CustomOverlay.xib */; };
+		E9BC2ACF1F4E91F600E12BA4 /* CustomOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2ACB1F4E91F600E12BA4 /* CustomOverlay.swift */; };
+		E9BC2AD11F4F1BB600E12BA4 /* SendFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC2AD01F4F1BB500E12BA4 /* SendFeedbackViewController.swift */; };
+		E9BC75271F57C44E002CB501 /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC75261F57C44E002CB501 /* NetworkActivityIndicatorManager.swift */; };
+		E9BC75291F57FF87002CB501 /* IAPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC75281F57FF87002CB501 /* IAPUtil.swift */; };
+		E9BC752C1F58004F002CB501 /* PaidSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC752B1F58004F002CB501 /* PaidSubscription.swift */; };
+		E9BC752E1F587E5E002CB501 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC752D1F587E5E002CB501 /* Request.swift */; };
+		E9E967131F489A9B00B180D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E967121F489A9B00B180D8 /* MessagesViewController.swift */; };
+		E9E967151F48AA4D00B180D8 /* MessagingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E967141F48AA4D00B180D8 /* MessagingUser.swift */; };
+		E9E967171F48D5B700B180D8 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E967161F48D5B700B180D8 /* MessagesTableViewCell.swift */; };
+		E9E967191F496F0300B180D8 /* ApproveKudosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E967181F496F0300B180D8 /* ApproveKudosViewController.swift */; };
+		E9E9671B1F49D50500B180D8 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9671A1F49D50500B180D8 /* NewMessageViewController.swift */; };
+		E9F119711F050012003FB4A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F119701F050012003FB4A0 /* AppDelegate.swift */; };
+		E9F119731F050012003FB4A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F119721F050012003FB4A0 /* ViewController.swift */; };
+		E9F119761F050012003FB4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F119741F050012003FB4A0 /* Main.storyboard */; };
+		E9F119791F050012003FB4A0 /* Athletica.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9F119771F050012003FB4A0 /* Athletica.xcdatamodeld */; };
+		E9F1197B1F050012003FB4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F1197A1F050012003FB4A0 /* Assets.xcassets */; };
+		E9F1197E1F050012003FB4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F1197C1F050012003FB4A0 /* LaunchScreen.storyboard */; };
+		E9F119891F050013003FB4A0 /* AthleticaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F119881F050013003FB4A0 /* AthleticaTests.swift */; };
+		E9F119941F050013003FB4A0 /* AthleticaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F119931F050013003FB4A0 /* AthleticaUITests.swift */; };
+		E9F9B2441F4C85B2003C4237 /* EmailUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B2431F4C85B2003C4237 /* EmailUtil.swift */; };
+		E9F9B2461F4C9637003C4237 /* ReportUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9B2451F4C9637003C4237 /* ReportUserViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9F119851F050013003FB4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9F119651F050012003FB4A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F1196C1F050012003FB4A0;
+			remoteInfo = Athletica;
+		};
+		E9F119901F050013003FB4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9F119651F050012003FB4A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F1196C1F050012003FB4A0;
+			remoteInfo = Athletica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9880ACC1F2F54BD0041D722 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06E88F8E550EF85C57BCB0DC /* Pods-Athletica-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletica-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Athletica-OneSignalNotificationServiceExtension/Pods-Athletica-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		0A046DB957A0A2FCA6CF5D30 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		0A0D6DB803423C4E10B4FD1C /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		152E80B620371C3B8E8AD4C8 /* Pods-Athletica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Athletica/Pods-Athletica.debug.xcconfig"; sourceTree = "<group>"; };
+		32FA69140E63C8F28E4E6B00 /* Pods_Athletica_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athletica_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DCDC1C5AC72BB06998BD32 /* Pods-AthleticaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthleticaTests/Pods-AthleticaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		585057D020143784DD115182 /* Pods_AthleticaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthleticaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C751B9388C244C3A0C5704E /* Pods-Athletica-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletica-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Athletica-OneSignalNotificationServiceExtension/Pods-Athletica-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		790DAB57F0CE9BA5735D78C3 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		7F174CF6508A8DD591604FF1 /* Pods_Athletica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Athletica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8295CDC332DBFB1EB919C792 /* Pods-AthleticaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthleticaTests/Pods-AthleticaTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAAA233DE31728069F0BAA78 /* Pods-AthleticaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AthleticaUITests/Pods-AthleticaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B45DF4472987C143013549AE /* Pods-AthleticaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AthleticaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AthleticaUITests/Pods-AthleticaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9FC021D70B9E5254E1EE22C /* Pods-Athletica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Athletica.release.xcconfig"; path = "Pods/Target Support Files/Pods-Athletica/Pods-Athletica.release.xcconfig"; sourceTree = "<group>"; };
+		E497348F14AE93E8A81A377B /* Pods_AthleticaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AthleticaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91144091F43571C00FCD05B /* OneSignalUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSignalUtil.swift; sourceTree = "<group>"; };
+		E9173B591F40D9B700391BF6 /* AuthorizedUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedUsersViewController.swift; sourceTree = "<group>"; };
+		E9173B5B1F418D4800391BF6 /* BlockedUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockedUsersViewController.swift; sourceTree = "<group>"; };
+		E9270EA21F0AD46500CC5B18 /* Athletica-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Athletica-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9270EA61F0AE33900CC5B18 /* AthleteStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteStreamsViewController.swift; sourceTree = "<group>"; };
+		E9270EA81F0B4CED00CC5B18 /* StreamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
+		E9270EAA1F0B7F1300CC5B18 /* StartLiveStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartLiveStreamViewController.swift; sourceTree = "<group>"; };
+		E92710AE1F0BE6D900CC5B18 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		E92710AF1F0BE6D900CC5B18 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		E930C0DF1F06911000BB5D82 /* AthleteNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteNewsViewController.swift; sourceTree = "<group>"; };
+		E930C0E11F06926C00BB5D82 /* AthleteMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteMenuViewController.swift; sourceTree = "<group>"; };
+		E930C0E31F06A0D300BB5D82 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E930C0E51F06A9FA00BB5D82 /* ChooseProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseProfileViewController.swift; sourceTree = "<group>"; };
+		E930C0E71F06DE5500BB5D82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E930C0E91F06E05B00BB5D82 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E930C0EA1F06E05B00BB5D82 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E930C0ED1F07C97300BB5D82 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E930C0EF1F07CF7800BB5D82 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		E930C0F11F095D2000BB5D82 /* AthleteArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteArticleViewController.swift; sourceTree = "<group>"; };
+		E930C0F31F09977A00BB5D82 /* AthleteProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileViewController.swift; sourceTree = "<group>"; };
+		E931B2681F056F8200095225 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E931B26A1F056FA900095225 /* AthleteSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteSignupViewController.swift; sourceTree = "<group>"; };
+		E931B26C1F05771100095225 /* MyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		E932F9621F0A860100F475A3 /* ExpyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpyTableView.swift; sourceTree = "<group>"; };
+		E932F9651F0A8C5D00F475A3 /* ProfileAboutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAboutTableViewCell.swift; sourceTree = "<group>"; };
+		E932F9671F0A8C7F00F475A3 /* ProfileAboutDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAboutDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B421F34572A009F0AD3 /* AthleteProfileBioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileBioTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B431F34572A009F0AD3 /* AthleteProfileBioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleteProfileBioTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B461F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileSchoolTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B471F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleteProfileSchoolTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B4B1F349FC9009F0AD3 /* SoccerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoccerTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B4C1F349FC9009F0AD3 /* SoccerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoccerTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B4F1F34AAF9009F0AD3 /* BasketballTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketballTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B501F34AAF9009F0AD3 /* BasketballTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasketballTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B531F34AB09009F0AD3 /* SwimmingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwimmingTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B541F34AB09009F0AD3 /* SwimmingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwimmingTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B571F34AB20009F0AD3 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B581F34AB20009F0AD3 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B5B1F34AB2E009F0AD3 /* TennisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TennisTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B5C1F34AB2E009F0AD3 /* TennisTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TennisTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B5F1F34AB3F009F0AD3 /* SoftballTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftballTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B601F34AB3F009F0AD3 /* SoftballTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoftballTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B631F34AB4B009F0AD3 /* GolfTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolfTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B641F34AB4B009F0AD3 /* GolfTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GolfTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B671F34AB58009F0AD3 /* VolleyballTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolleyballTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B681F34AB58009F0AD3 /* VolleyballTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolleyballTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B6B1F34AB67009F0AD3 /* LacrosseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LacrosseTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B6C1F34AB67009F0AD3 /* LacrosseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LacrosseTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B6F1F34AB75009F0AD3 /* HockeyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B701F34AB75009F0AD3 /* HockeyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HockeyTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B731F34AB8B009F0AD3 /* RowingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B741F34AB8B009F0AD3 /* RowingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowingTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B771F34AB9C009F0AD3 /* WaterpoloTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterpoloTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B781F34AB9C009F0AD3 /* WaterpoloTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterpoloTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B7B1F34ABB3009F0AD3 /* GymnasticsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymnasticsTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B7C1F34ABB3009F0AD3 /* GymnasticsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GymnasticsTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B7F1F34ABC1009F0AD3 /* SkiingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkiingTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B801F34ABC1009F0AD3 /* SkiingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkiingTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B881F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileVolunteeringTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B891F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleteProfileVolunteeringTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B8C1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileHighlightsTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B8D1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleteProfileHighlightsTableViewCell.xib; sourceTree = "<group>"; };
+		E9370B901F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileHonorsTableViewCell.swift; sourceTree = "<group>"; };
+		E9370B911F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AthleteProfileHonorsTableViewCell.xib; sourceTree = "<group>"; };
+		E9393AF81F39DDED0004F732 /* AthleteProfileStreamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileStreamsTableViewCell.swift; sourceTree = "<group>"; };
+		E9393AFA1F3AD7E20004F732 /* AthleteProfileKudosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfileKudosTableViewCell.swift; sourceTree = "<group>"; };
+		E9393AFC1F3AEEFD0004F732 /* Kudo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kudo.swift; sourceTree = "<group>"; };
+		E9393AFE1F3B5CEC0004F732 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		E9393B001F3B748C0004F732 /* FollowingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingTableViewCell.swift; sourceTree = "<group>"; };
+		E9393B041F3B755B0004F732 /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		E9393B061F3B76270004F732 /* FollowersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersTableViewCell.swift; sourceTree = "<group>"; };
+		E9393B0A1F402D5E0004F732 /* AWSUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSUtil.swift; sourceTree = "<group>"; };
+		E93A93A41F062ADB0039BC94 /* AthleteLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteLoginViewController.swift; sourceTree = "<group>"; };
+		E93A93A61F0635880039BC94 /* AthleleForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleleForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		E954DE5C1F2647C100E0A22A /* CoachProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachProfileViewController.swift; sourceTree = "<group>"; };
+		E954DE601F266AB200E0A22A /* ScheduleStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleStreamViewController.swift; sourceTree = "<group>"; };
+		E958139D1F27AD2900B05965 /* AthleteScheduleStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteScheduleStreamViewController.swift; sourceTree = "<group>"; };
+		E958139F1F2945EC00B05965 /* Athletica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Athletica.entitlements; sourceTree = "<group>"; };
+		E95813A01F29E3FB00B05965 /* AthleteInviteCoachesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteInviteCoachesViewController.swift; sourceTree = "<group>"; };
+		E95813A21F29E5CB00B05965 /* InviteCoachesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCoachesTableViewCell.swift; sourceTree = "<group>"; };
+		E95813A41F29E8B900B05965 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		E958BD2C1F1C5F7C00B454D7 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		E958BD2E1F1D4B7800B454D7 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E958BD311F1DFBB200B454D7 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		E958BD331F1E30CA00B454D7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E958BD351F1E3D3900B454D7 /* SearchPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		E958BD371F1E3D7B00B454D7 /* SearchStreamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStreamsTableViewCell.swift; sourceTree = "<group>"; };
+		E958BD391F1E594100B454D7 /* UpcomingStreamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingStreamsViewController.swift; sourceTree = "<group>"; };
+		E958BD3B1F1E66AF00B454D7 /* UpcomingStreamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingStreamsTableViewCell.swift; sourceTree = "<group>"; };
+		E958BD3D1F1F4C7100B454D7 /* UpgradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
+		E96BC5C21F1FD7E80007CDAA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E96BC5C51F1FF06A0007CDAA /* ProProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProProfileViewController.swift; sourceTree = "<group>"; };
+		E96BC5C81F208B290007CDAA /* FanProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanProfileViewController.swift; sourceTree = "<group>"; };
+		E96BC5CB1F20DD980007CDAA /* CoachSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachSignupViewController.swift; sourceTree = "<group>"; };
+		E96DF5671F49D7120079E03A /* NewMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageTableViewCell.swift; sourceTree = "<group>"; };
+		E96DF5691F49DB650079E03A /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E96DF56B1F4A19B80079E03A /* ChatContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContainerViewController.swift; sourceTree = "<group>"; };
+		E96DF56D1F4ACA2E0079E03A /* ViewImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
+		E986165A1F33472700A60670 /* AthleteProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteProfile.swift; sourceTree = "<group>"; };
+		E986165C1F33592A00A60670 /* AthleteEditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteEditProfileViewController.swift; sourceTree = "<group>"; };
+		E9885F3E1F1143DE001C1CA7 /* LiveStreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
+		E9885F401F114499001C1CA7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E9885F421F1144A6001C1CA7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E9885F441F1144AF001C1CA7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E9885F461F1144B9001C1CA7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9885F481F1144C2001C1CA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9885F4A1F1144CE001C1CA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E9885F4C1F1144DA001C1CA7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E9885F4E1F1144E2001C1CA7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E9885F501F1144EC001C1CA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9885F521F1144F3001C1CA7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E9885F541F1144FF001C1CA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E9885F561F114507001C1CA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9885F581F114510001C1CA7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		E9885F5C1F1145DD001C1CA7 /* BambuserConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BambuserConstants.h; sourceTree = "<group>"; };
+		E9885F5D1F1145DD001C1CA7 /* BambuserViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BambuserViewDelegate.h; sourceTree = "<group>"; };
+		E9885F5E1F1145DD001C1CA7 /* libbambuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbambuser.h; sourceTree = "<group>"; };
+		E9885F5F1F1145DD001C1CA7 /* libbambuserplayer-constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libbambuserplayer-constants.h"; sourceTree = "<group>"; };
+		E9885F601F1145DD001C1CA7 /* libbambuserplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbambuserplayer.h; sourceTree = "<group>"; };
+		E9885F621F1145DD001C1CA7 /* libbambuser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbambuser.a; sourceTree = "<group>"; };
+		E9885F631F1145DD001C1CA7 /* libbambuserplayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbambuserplayer.a; sourceTree = "<group>"; };
+		E9885F661F116BE8001C1CA7 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		E9885F681F116DA5001C1CA7 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E9885F6A1F123880001C1CA7 /* FirebaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtil.swift; sourceTree = "<group>"; };
+		E99CF38E1F459D10001C3176 /* ViewCoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCoachViewController.swift; sourceTree = "<group>"; };
+		E99CF3901F459D21001C3176 /* ViewFanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFanViewController.swift; sourceTree = "<group>"; };
+		E99CF3921F459D2D001C3176 /* ViewProViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProViewController.swift; sourceTree = "<group>"; };
+		E99CF3941F459D3B001C3176 /* ViewAthleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAthleteViewController.swift; sourceTree = "<group>"; };
+		E99CF3981F470686001C3176 /* GiveKudosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveKudosViewController.swift; sourceTree = "<group>"; };
+		E9B84E2E1F4738780019B165 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E9B84E301F473BA20019B165 /* CoachEditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachEditProfileViewController.swift; sourceTree = "<group>"; };
+		E9B84E321F4747770019B165 /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		E9BC2ABB1F4DEC0800E12BA4 /* Privacy.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Privacy.rtf; sourceTree = "<group>"; };
+		E9BC2ABD1F4DED0C00E12BA4 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		E9BC2ABF1F4DF58E00E12BA4 /* Terms.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Terms.rtf; sourceTree = "<group>"; };
+		E9BC2AC11F4DF65F00E12BA4 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		E9BC2AC31F4E885C00E12BA4 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		E9BC2AC51F4E8B4B00E12BA4 /* Onboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
+		E9BC2AC81F4E91F600E12BA4 /* CustomPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPage.xib; sourceTree = "<group>"; };
+		E9BC2AC91F4E91F600E12BA4 /* CustomPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPage.swift; sourceTree = "<group>"; };
+		E9BC2ACA1F4E91F600E12BA4 /* CustomOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlay.xib; sourceTree = "<group>"; };
+		E9BC2ACB1F4E91F600E12BA4 /* CustomOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlay.swift; sourceTree = "<group>"; };
+		E9BC2AD01F4F1BB500E12BA4 /* SendFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeedbackViewController.swift; sourceTree = "<group>"; };
+		E9BC75261F57C44E002CB501 /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
+		E9BC75281F57FF87002CB501 /* IAPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPUtil.swift; sourceTree = "<group>"; };
+		E9BC752B1F58004F002CB501 /* PaidSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaidSubscription.swift; sourceTree = "<group>"; };
+		E9BC752D1F587E5E002CB501 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E9E967121F489A9B00B180D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		E9E967141F48AA4D00B180D8 /* MessagingUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingUser.swift; sourceTree = "<group>"; };
+		E9E967161F48D5B700B180D8 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		E9E967181F496F0300B180D8 /* ApproveKudosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApproveKudosViewController.swift; sourceTree = "<group>"; };
+		E9E9671A1F49D50500B180D8 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		E9F1196D1F050012003FB4A0 /* Athletica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athletica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F119701F050012003FB4A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9F119721F050012003FB4A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9F119751F050012003FB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9F119781F050012003FB4A0 /* Athletica.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Athletica.xcdatamodel; sourceTree = "<group>"; };
+		E9F1197A1F050012003FB4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9F1197D1F050012003FB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9F1197F1F050013003FB4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F119841F050013003FB4A0 /* AthleticaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthleticaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F119881F050013003FB4A0 /* AthleticaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticaTests.swift; sourceTree = "<group>"; };
+		E9F1198A1F050013003FB4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F1198F1F050013003FB4A0 /* AthleticaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AthleticaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F119931F050013003FB4A0 /* AthleticaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleticaUITests.swift; sourceTree = "<group>"; };
+		E9F119951F050013003FB4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F9B2431F4C85B2003C4237 /* EmailUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailUtil.swift; sourceTree = "<group>"; };
+		E9F9B2451F4C9637003C4237 /* ReportUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportUserViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9F1196A1F050012003FB4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9885F591F114510001C1CA7 /* VideoToolbox.framework in Frameworks */,
+				E9885F571F114507001C1CA7 /* UIKit.framework in Frameworks */,
+				E9885F551F1144FF001C1CA7 /* SystemConfiguration.framework in Frameworks */,
+				E9885F531F1144F3001C1CA7 /* QuartzCore.framework in Frameworks */,
+				E9885F511F1144EC001C1CA7 /* Foundation.framework in Frameworks */,
+				E9885F4F1F1144E2001C1CA7 /* CoreVideo.framework in Frameworks */,
+				E9885F641F1145DD001C1CA7 /* libbambuser.a in Frameworks */,
+				E9885F651F1145DD001C1CA7 /* libbambuserplayer.a in Frameworks */,
+				E9885F4D1F1144DA001C1CA7 /* CoreMedia.framework in Frameworks */,
+				E9885F4B1F1144CE001C1CA7 /* CoreLocation.framework in Frameworks */,
+				E9885F491F1144C2001C1CA7 /* CoreGraphics.framework in Frameworks */,
+				E9885F471F1144B9001C1CA7 /* AVFoundation.framework in Frameworks */,
+				E9885F451F1144AF001C1CA7 /* AudioToolbox.framework in Frameworks */,
+				E9885F431F1144A6001C1CA7 /* libc++.tbd in Frameworks */,
+				E9885F411F114499001C1CA7 /* libz.tbd in Frameworks */,
+				DA1E6A7CE838D728F3F0FA8C /* Pods_Athletica.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F119811F050013003FB4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C1B80736048AF904416FD5 /* Pods_AthleticaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F1198C1F050013003FB4A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5D281A59FC3DC1F75B6C77 /* Pods_AthleticaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1195DD70E9F68F521EC7A613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9885F5A1F1145DD001C1CA7 /* libbumbuser */,
+				E9885F581F114510001C1CA7 /* VideoToolbox.framework */,
+				E9885F561F114507001C1CA7 /* UIKit.framework */,
+				E9885F541F1144FF001C1CA7 /* SystemConfiguration.framework */,
+				E9885F521F1144F3001C1CA7 /* QuartzCore.framework */,
+				E9885F501F1144EC001C1CA7 /* Foundation.framework */,
+				E9885F4E1F1144E2001C1CA7 /* CoreVideo.framework */,
+				E9885F4C1F1144DA001C1CA7 /* CoreMedia.framework */,
+				E9885F4A1F1144CE001C1CA7 /* CoreLocation.framework */,
+				E9885F481F1144C2001C1CA7 /* CoreGraphics.framework */,
+				E9885F461F1144B9001C1CA7 /* AVFoundation.framework */,
+				E9885F441F1144AF001C1CA7 /* AudioToolbox.framework */,
+				E9885F421F1144A6001C1CA7 /* libc++.tbd */,
+				E9885F401F114499001C1CA7 /* libz.tbd */,
+				7F174CF6508A8DD591604FF1 /* Pods_Athletica.framework */,
+				585057D020143784DD115182 /* Pods_AthleticaTests.framework */,
+				E497348F14AE93E8A81A377B /* Pods_AthleticaUITests.framework */,
+				32FA69140E63C8F28E4E6B00 /* Pods_Athletica_OneSignalNotificationServiceExtension.framework */,
+				0A0D6DB803423C4E10B4FD1C /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EB7F48684FE82A9615CD8E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				152E80B620371C3B8E8AD4C8 /* Pods-Athletica.debug.xcconfig */,
+				D9FC021D70B9E5254E1EE22C /* Pods-Athletica.release.xcconfig */,
+				40DCDC1C5AC72BB06998BD32 /* Pods-AthleticaTests.debug.xcconfig */,
+				8295CDC332DBFB1EB919C792 /* Pods-AthleticaTests.release.xcconfig */,
+				B45DF4472987C143013549AE /* Pods-AthleticaUITests.debug.xcconfig */,
+				AAAA233DE31728069F0BAA78 /* Pods-AthleticaUITests.release.xcconfig */,
+				5C751B9388C244C3A0C5704E /* Pods-Athletica-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				06E88F8E550EF85C57BCB0DC /* Pods-Athletica-OneSignalNotificationServiceExtension.release.xcconfig */,
+				790DAB57F0CE9BA5735D78C3 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				0A046DB957A0A2FCA6CF5D30 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E90325771F055970001FCDD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E96BC5CA1F20DD820007CDAA /* Coach */,
+				E96BC5C71F208AE30007CDAA /* Fan */,
+				E96BC5C41F1FF04C0007CDAA /* Pro */,
+				E93A93A81F0641240039BC94 /* Athlete */,
+				E99CF3861F45975B001C3176 /* Common */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E90325781F05597B001FCDD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E930C0ED1F07C97300BB5D82 /* Article.swift */,
+				E9885F661F116BE8001C1CA7 /* Stream.swift */,
+				E958BD331F1E30CA00B454D7 /* User.swift */,
+				E986165A1F33472700A60670 /* AthleteProfile.swift */,
+				E9393AFC1F3AEEFD0004F732 /* Kudo.swift */,
+				E9E967141F48AA4D00B180D8 /* MessagingUser.swift */,
+				E9BC752D1F587E5E002CB501 /* Request.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E90325791F055986001FCDD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC2AC71F4E91E300E12BA4 /* Onboard */,
+				E95813A41F29E8B900B05965 /* CheckBox.swift */,
+				E958BD301F1DFB9500B454D7 /* CollectionViewCells */,
+				E932F9641F0A8C2D00F475A3 /* TableViewCells */,
+				E931B26C1F05771100095225 /* MyFloatingLabelTextField.swift */,
+				E932F9621F0A860100F475A3 /* ExpyTableView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E903257A1F055993001FCDD2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC75261F57C44E002CB501 /* NetworkActivityIndicatorManager.swift */,
+				E930C0E91F06E05B00BB5D82 /* Constants.swift */,
+				E930C0EA1F06E05B00BB5D82 /* Reachability.swift */,
+				E930C0E31F06A0D300BB5D82 /* Util.swift */,
+				E931B2681F056F8200095225 /* BaseViewController.swift */,
+				E9885F681F116DA5001C1CA7 /* Network.swift */,
+				E9885F6A1F123880001C1CA7 /* FirebaseUtil.swift */,
+				E9393B0A1F402D5E0004F732 /* AWSUtil.swift */,
+				E91144091F43571C00FCD05B /* OneSignalUtil.swift */,
+				E9B84E321F4747770019B165 /* ImageUtil.swift */,
+				E9F9B2431F4C85B2003C4237 /* EmailUtil.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E903257B1F0559CA001FCDD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9F119701F050012003FB4A0 /* AppDelegate.swift */,
+				E9F119741F050012003FB4A0 /* Main.storyboard */,
+				E9BC2AC51F4E8B4B00E12BA4 /* Onboard.storyboard */,
+				E9F1197A1F050012003FB4A0 /* Assets.xcassets */,
+				E9F1197C1F050012003FB4A0 /* LaunchScreen.storyboard */,
+				E9F1197F1F050013003FB4A0 /* Info.plist */,
+				E9F119771F050012003FB4A0 /* Athletica.xcdatamodeld */,
+				E9270EA21F0AD46500CC5B18 /* Athletica-Bridging-Header.h */,
+				E9BC2ABB1F4DEC0800E12BA4 /* Privacy.rtf */,
+				E9BC2ABF1F4DF58E00E12BA4 /* Terms.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9270FD11F0BE59100CC5B18 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E92710AE1F0BE6D900CC5B18 /* UIImage+ResizeAdditions.h */,
+				E92710AF1F0BE6D900CC5B18 /* UIImage+ResizeAdditions.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		E932F9641F0A8C2D00F475A3 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E9370B831F34C057009F0AD3 /* AthleteProfile */,
+				E930C0EF1F07CF7800BB5D82 /* ArticleTableViewCell.swift */,
+				E932F9651F0A8C5D00F475A3 /* ProfileAboutTableViewCell.swift */,
+				E932F9671F0A8C7F00F475A3 /* ProfileAboutDetailTableViewCell.swift */,
+				E9270EA81F0B4CED00CC5B18 /* StreamTableViewCell.swift */,
+				E958BD351F1E3D3900B454D7 /* SearchPeopleTableViewCell.swift */,
+				E958BD371F1E3D7B00B454D7 /* SearchStreamsTableViewCell.swift */,
+				E958BD3B1F1E66AF00B454D7 /* UpcomingStreamsTableViewCell.swift */,
+				E95813A21F29E5CB00B05965 /* InviteCoachesTableViewCell.swift */,
+				E9E967161F48D5B700B180D8 /* MessagesTableViewCell.swift */,
+				E96DF5671F49D7120079E03A /* NewMessageTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E9370B4A1F349EDE009F0AD3 /* AthleteProfileSportsStats */ = {
+			isa = PBXGroup;
+			children = (
+				E9370B4B1F349FC9009F0AD3 /* SoccerTableViewCell.swift */,
+				E9370B4C1F349FC9009F0AD3 /* SoccerTableViewCell.xib */,
+				E9370B4F1F34AAF9009F0AD3 /* BasketballTableViewCell.swift */,
+				E9370B501F34AAF9009F0AD3 /* BasketballTableViewCell.xib */,
+				E9370B531F34AB09009F0AD3 /* SwimmingTableViewCell.swift */,
+				E9370B541F34AB09009F0AD3 /* SwimmingTableViewCell.xib */,
+				E9370B571F34AB20009F0AD3 /* TrackTableViewCell.swift */,
+				E9370B581F34AB20009F0AD3 /* TrackTableViewCell.xib */,
+				E9370B5B1F34AB2E009F0AD3 /* TennisTableViewCell.swift */,
+				E9370B5C1F34AB2E009F0AD3 /* TennisTableViewCell.xib */,
+				E9370B5F1F34AB3F009F0AD3 /* SoftballTableViewCell.swift */,
+				E9370B601F34AB3F009F0AD3 /* SoftballTableViewCell.xib */,
+				E9370B631F34AB4B009F0AD3 /* GolfTableViewCell.swift */,
+				E9370B641F34AB4B009F0AD3 /* GolfTableViewCell.xib */,
+				E9370B671F34AB58009F0AD3 /* VolleyballTableViewCell.swift */,
+				E9370B681F34AB58009F0AD3 /* VolleyballTableViewCell.xib */,
+				E9370B6B1F34AB67009F0AD3 /* LacrosseTableViewCell.swift */,
+				E9370B6C1F34AB67009F0AD3 /* LacrosseTableViewCell.xib */,
+				E9370B6F1F34AB75009F0AD3 /* HockeyTableViewCell.swift */,
+				E9370B701F34AB75009F0AD3 /* HockeyTableViewCell.xib */,
+				E9370B731F34AB8B009F0AD3 /* RowingTableViewCell.swift */,
+				E9370B741F34AB8B009F0AD3 /* RowingTableViewCell.xib */,
+				E9370B771F34AB9C009F0AD3 /* WaterpoloTableViewCell.swift */,
+				E9370B781F34AB9C009F0AD3 /* WaterpoloTableViewCell.xib */,
+				E9370B7B1F34ABB3009F0AD3 /* GymnasticsTableViewCell.swift */,
+				E9370B7C1F34ABB3009F0AD3 /* GymnasticsTableViewCell.xib */,
+				E9370B7F1F34ABC1009F0AD3 /* SkiingTableViewCell.swift */,
+				E9370B801F34ABC1009F0AD3 /* SkiingTableViewCell.xib */,
+			);
+			name = AthleteProfileSportsStats;
+			sourceTree = "<group>";
+		};
+		E9370B831F34C057009F0AD3 /* AthleteProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E9393AF71F39DDB00004F732 /* About */,
+				E9370B4A1F349EDE009F0AD3 /* AthleteProfileSportsStats */,
+				E9393AF81F39DDED0004F732 /* AthleteProfileStreamsTableViewCell.swift */,
+				E9393AFA1F3AD7E20004F732 /* AthleteProfileKudosTableViewCell.swift */,
+				E9393B001F3B748C0004F732 /* FollowingTableViewCell.swift */,
+				E9393B061F3B76270004F732 /* FollowersTableViewCell.swift */,
+			);
+			name = AthleteProfile;
+			sourceTree = "<group>";
+		};
+		E9393AF71F39DDB00004F732 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				E9370B421F34572A009F0AD3 /* AthleteProfileBioTableViewCell.swift */,
+				E9370B431F34572A009F0AD3 /* AthleteProfileBioTableViewCell.xib */,
+				E9370B901F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.swift */,
+				E9370B911F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.xib */,
+				E9370B461F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.swift */,
+				E9370B471F346799009F0AD3 /* AthleteProfileSchoolTableViewCell.xib */,
+				E9370B881F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.swift */,
+				E9370B891F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.xib */,
+				E9370B8C1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.swift */,
+				E9370B8D1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		E93A93A81F0641240039BC94 /* Athlete */ = {
+			isa = PBXGroup;
+			children = (
+				E930C0F31F09977A00BB5D82 /* AthleteProfileViewController.swift */,
+				E958139D1F27AD2900B05965 /* AthleteScheduleStreamViewController.swift */,
+				E95813A01F29E3FB00B05965 /* AthleteInviteCoachesViewController.swift */,
+				E986165C1F33592A00A60670 /* AthleteEditProfileViewController.swift */,
+			);
+			name = Athlete;
+			sourceTree = "<group>";
+		};
+		E958BD301F1DFB9500B454D7 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E958BD311F1DFBB200B454D7 /* CategoryCollectionViewCell.swift */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		E96BC5C41F1FF04C0007CDAA /* Pro */ = {
+			isa = PBXGroup;
+			children = (
+				E96BC5C51F1FF06A0007CDAA /* ProProfileViewController.swift */,
+			);
+			name = Pro;
+			sourceTree = "<group>";
+		};
+		E96BC5C71F208AE30007CDAA /* Fan */ = {
+			isa = PBXGroup;
+			children = (
+				E96BC5C81F208B290007CDAA /* FanProfileViewController.swift */,
+			);
+			name = Fan;
+			sourceTree = "<group>";
+		};
+		E96BC5CA1F20DD820007CDAA /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				E96BC5CB1F20DD980007CDAA /* CoachSignupViewController.swift */,
+				E954DE5C1F2647C100E0A22A /* CoachProfileViewController.swift */,
+				E9B84E2E1F4738780019B165 /* FavoritesViewController.swift */,
+				E9B84E301F473BA20019B165 /* CoachEditProfileViewController.swift */,
+			);
+			name = Coach;
+			sourceTree = "<group>";
+		};
+		E9885F5A1F1145DD001C1CA7 /* libbumbuser */ = {
+			isa = PBXGroup;
+			children = (
+				E9885F5B1F1145DD001C1CA7 /* include */,
+				E9885F611F1145DD001C1CA7 /* lib */,
+			);
+			name = libbumbuser;
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		E9885F5B1F1145DD001C1CA7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E9885F5C1F1145DD001C1CA7 /* BambuserConstants.h */,
+				E9885F5D1F1145DD001C1CA7 /* BambuserViewDelegate.h */,
+				E9885F5E1F1145DD001C1CA7 /* libbambuser.h */,
+				E9885F5F1F1145DD001C1CA7 /* libbambuserplayer-constants.h */,
+				E9885F601F1145DD001C1CA7 /* libbambuserplayer.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E9885F611F1145DD001C1CA7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E9885F621F1145DD001C1CA7 /* libbambuser.a */,
+				E9885F631F1145DD001C1CA7 /* libbambuserplayer.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E99CF3861F45975B001C3176 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E9E967111F489A5D00B180D8 /* Messages */,
+				E99CF38D1F459890001C3176 /* Profile */,
+				E99CF38C1F459884001C3176 /* Upgrade */,
+				E99CF38A1F45983C001C3176 /* Search */,
+				E99CF3891F4597D7001C3176 /* Streams */,
+				E99CF3881F4597A3001C3176 /* News */,
+				E99CF3871F459784001C3176 /* Settings */,
+				E9F119721F050012003FB4A0 /* ViewController.swift */,
+				E930C0E51F06A9FA00BB5D82 /* ChooseProfileViewController.swift */,
+				E931B26A1F056FA900095225 /* AthleteSignupViewController.swift */,
+				E93A93A41F062ADB0039BC94 /* AthleteLoginViewController.swift */,
+				E93A93A61F0635880039BC94 /* AthleleForgotPasswordViewController.swift */,
+				E930C0E11F06926C00BB5D82 /* AthleteMenuViewController.swift */,
+				E9BC2ABD1F4DED0C00E12BA4 /* PrivacyViewController.swift */,
+				E9BC2AC11F4DF65F00E12BA4 /* TermsViewController.swift */,
+				E9BC2AC31F4E885C00E12BA4 /* OnboardViewController.swift */,
+				E9BC2AD01F4F1BB500E12BA4 /* SendFeedbackViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E99CF3871F459784001C3176 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E96BC5C21F1FD7E80007CDAA /* SettingsViewController.swift */,
+				E9173B591F40D9B700391BF6 /* AuthorizedUsersViewController.swift */,
+				E9173B5B1F418D4800391BF6 /* BlockedUsersViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		E99CF3881F4597A3001C3176 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				E930C0DF1F06911000BB5D82 /* AthleteNewsViewController.swift */,
+				E930C0F11F095D2000BB5D82 /* AthleteArticleViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		E99CF3891F4597D7001C3176 /* Streams */ = {
+			isa = PBXGroup;
+			children = (
+				E958BD391F1E594100B454D7 /* UpcomingStreamsViewController.swift */,
+				E9270EA61F0AE33900CC5B18 /* AthleteStreamsViewController.swift */,
+				E958BD2C1F1C5F7C00B454D7 /* PlayerViewController.swift */,
+				E9270EAA1F0B7F1300CC5B18 /* StartLiveStreamViewController.swift */,
+				E954DE601F266AB200E0A22A /* ScheduleStreamViewController.swift */,
+				E9885F3E1F1143DE001C1CA7 /* LiveStreamViewController.swift */,
+			);
+			name = Streams;
+			sourceTree = "<group>";
+		};
+		E99CF38A1F45983C001C3176 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E958BD2E1F1D4B7800B454D7 /* SearchViewController.swift */,
+				E99CF38E1F459D10001C3176 /* ViewCoachViewController.swift */,
+				E99CF3901F459D21001C3176 /* ViewFanViewController.swift */,
+				E99CF3921F459D2D001C3176 /* ViewProViewController.swift */,
+				E99CF3941F459D3B001C3176 /* ViewAthleteViewController.swift */,
+				E99CF3981F470686001C3176 /* GiveKudosViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		E99CF38C1F459884001C3176 /* Upgrade */ = {
+			isa = PBXGroup;
+			children = (
+				E958BD3D1F1F4C7100B454D7 /* UpgradeViewController.swift */,
+			);
+			name = Upgrade;
+			sourceTree = "<group>";
+		};
+		E99CF38D1F459890001C3176 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E9393AFE1F3B5CEC0004F732 /* FollowingViewController.swift */,
+				E9393B041F3B755B0004F732 /* FollowersViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		E9BC2AC71F4E91E300E12BA4 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC2AC81F4E91F600E12BA4 /* CustomPage.xib */,
+				E9BC2AC91F4E91F600E12BA4 /* CustomPage.swift */,
+				E9BC2ACA1F4E91F600E12BA4 /* CustomOverlay.xib */,
+				E9BC2ACB1F4E91F600E12BA4 /* CustomOverlay.swift */,
+			);
+			name = Onboard;
+			sourceTree = "<group>";
+		};
+		E9BC752A1F58003B002CB501 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC75281F57FF87002CB501 /* IAPUtil.swift */,
+				E9BC752B1F58004F002CB501 /* PaidSubscription.swift */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
+		E9E967111F489A5D00B180D8 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E9E967121F489A9B00B180D8 /* MessagesViewController.swift */,
+				E9E967181F496F0300B180D8 /* ApproveKudosViewController.swift */,
+				E9E9671A1F49D50500B180D8 /* NewMessageViewController.swift */,
+				E96DF5691F49DB650079E03A /* ChatViewController.swift */,
+				E96DF56B1F4A19B80079E03A /* ChatContainerViewController.swift */,
+				E96DF56D1F4ACA2E0079E03A /* ViewImageViewController.swift */,
+				E9F9B2451F4C9637003C4237 /* ReportUserViewController.swift */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		E9F119641F050012003FB4A0 = {
+			isa = PBXGroup;
+			children = (
+				E9F1196F1F050012003FB4A0 /* Athletica */,
+				E9F119871F050013003FB4A0 /* AthleticaTests */,
+				E9F119921F050013003FB4A0 /* AthleticaUITests */,
+				E9F1196E1F050012003FB4A0 /* Products */,
+				3EB7F48684FE82A9615CD8E5 /* Pods */,
+				1195DD70E9F68F521EC7A613 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9F1196E1F050012003FB4A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1196D1F050012003FB4A0 /* Athletica.app */,
+				E9F119841F050013003FB4A0 /* AthleticaTests.xctest */,
+				E9F1198F1F050013003FB4A0 /* AthleticaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9F1196F1F050012003FB4A0 /* Athletica */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC752A1F58003B002CB501 /* IAP */,
+				E958139F1F2945EC00B05965 /* Athletica.entitlements */,
+				E9270FD11F0BE59100CC5B18 /* Lib */,
+				E930C0E71F06DE5500BB5D82 /* GoogleService-Info.plist */,
+				E903257A1F055993001FCDD2 /* Utils */,
+				E90325781F05597B001FCDD2 /* Models */,
+				E90325791F055986001FCDD2 /* Views */,
+				E90325771F055970001FCDD2 /* Controllers */,
+				E903257B1F0559CA001FCDD2 /* Supporting Files */,
+			);
+			path = Athletica;
+			sourceTree = "<group>";
+		};
+		E9F119871F050013003FB4A0 /* AthleticaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9F119881F050013003FB4A0 /* AthleticaTests.swift */,
+				E9F1198A1F050013003FB4A0 /* Info.plist */,
+			);
+			path = AthleticaTests;
+			sourceTree = "<group>";
+		};
+		E9F119921F050013003FB4A0 /* AthleticaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9F119931F050013003FB4A0 /* AthleticaUITests.swift */,
+				E9F119951F050013003FB4A0 /* Info.plist */,
+			);
+			path = AthleticaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9F1196C1F050012003FB4A0 /* Athletica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F119981F050013003FB4A0 /* Build configuration list for PBXNativeTarget "Athletica" */;
+			buildPhases = (
+				28569C251F78510F32A249B4 /* [CP] Check Pods Manifest.lock */,
+				E9F119691F050012003FB4A0 /* Sources */,
+				E9F1196A1F050012003FB4A0 /* Frameworks */,
+				E9F1196B1F050012003FB4A0 /* Resources */,
+				EB90BF94FA88B505622E5E6B /* [CP] Embed Pods Frameworks */,
+				A03CB19F308CCBF31F7A0919 /* [CP] Copy Pods Resources */,
+				E95FB9881F15287500F7C88F /* ShellScript */,
+				E9880ACC1F2F54BD0041D722 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Athletica;
+			productName = Athletica;
+			productReference = E9F1196D1F050012003FB4A0 /* Athletica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9F119831F050013003FB4A0 /* AthleticaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F1199B1F050013003FB4A0 /* Build configuration list for PBXNativeTarget "AthleticaTests" */;
+			buildPhases = (
+				DB7C416F96208D453E1B3B43 /* [CP] Check Pods Manifest.lock */,
+				E9F119801F050013003FB4A0 /* Sources */,
+				E9F119811F050013003FB4A0 /* Frameworks */,
+				E9F119821F050013003FB4A0 /* Resources */,
+				2772E9EAFB7B19A48BDB81C1 /* [CP] Embed Pods Frameworks */,
+				EE92044D7FA87F9924D87DAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9F119861F050013003FB4A0 /* PBXTargetDependency */,
+			);
+			name = AthleticaTests;
+			productName = AthleticaTests;
+			productReference = E9F119841F050013003FB4A0 /* AthleticaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9F1198E1F050013003FB4A0 /* AthleticaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F1199E1F050013003FB4A0 /* Build configuration list for PBXNativeTarget "AthleticaUITests" */;
+			buildPhases = (
+				8AAB2EC23EC63C33100115C7 /* [CP] Check Pods Manifest.lock */,
+				E9F1198B1F050013003FB4A0 /* Sources */,
+				E9F1198C1F050013003FB4A0 /* Frameworks */,
+				E9F1198D1F050013003FB4A0 /* Resources */,
+				2C1E638DC02D04944D2EF43A /* [CP] Embed Pods Frameworks */,
+				BCC2E7A469163942F4727699 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9F119911F050013003FB4A0 /* PBXTargetDependency */,
+			);
+			name = AthleticaUITests;
+			productName = AthleticaUITests;
+			productReference = E9F1198F1F050013003FB4A0 /* AthleticaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9F119651F050012003FB4A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ClearAppDevelopment;
+				TargetAttributes = {
+					E9F1196C1F050012003FB4A0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L7582TM84M;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					E9F119831F050013003FB4A0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9F1196C1F050012003FB4A0;
+					};
+					E9F1198E1F050013003FB4A0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9F1196C1F050012003FB4A0;
+					};
+				};
+			};
+			buildConfigurationList = E9F119681F050012003FB4A0 /* Build configuration list for PBXProject "Athletica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9F119641F050012003FB4A0;
+			productRefGroup = E9F1196E1F050012003FB4A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F1196C1F050012003FB4A0 /* Athletica */,
+				E9F119831F050013003FB4A0 /* AthleticaTests */,
+				E9F1198E1F050013003FB4A0 /* AthleticaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9F1196B1F050012003FB4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BC2AC61F4E8B4B00E12BA4 /* Onboard.storyboard in Resources */,
+				E9370B931F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.xib in Resources */,
+				E9370B621F34AB3F009F0AD3 /* SoftballTableViewCell.xib in Resources */,
+				E9BC2ACE1F4E91F600E12BA4 /* CustomOverlay.xib in Resources */,
+				E9F1197E1F050012003FB4A0 /* LaunchScreen.storyboard in Resources */,
+				E9BC2ABC1F4DEC0800E12BA4 /* Privacy.rtf in Resources */,
+				E9370B561F34AB09009F0AD3 /* SwimmingTableViewCell.xib in Resources */,
+				E9BC2AC01F4DF58E00E12BA4 /* Terms.rtf in Resources */,
+				E9370B6E1F34AB67009F0AD3 /* LacrosseTableViewCell.xib in Resources */,
+				E9370B7E1F34ABB3009F0AD3 /* GymnasticsTableViewCell.xib in Resources */,
+				E9370B8F1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.xib in Resources */,
+				E9370B761F34AB8B009F0AD3 /* RowingTableViewCell.xib in Resources */,
+				E9370B7A1F34AB9C009F0AD3 /* WaterpoloTableViewCell.xib in Resources */,
+				E9370B491F34679A009F0AD3 /* AthleteProfileSchoolTableViewCell.xib in Resources */,
+				E9370B5A1F34AB20009F0AD3 /* TrackTableViewCell.xib in Resources */,
+				E9370B8B1F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.xib in Resources */,
+				E9370B5E1F34AB2E009F0AD3 /* TennisTableViewCell.xib in Resources */,
+				E9370B661F34AB4B009F0AD3 /* GolfTableViewCell.xib in Resources */,
+				E930C0E81F06DE5500BB5D82 /* GoogleService-Info.plist in Resources */,
+				E9370B821F34ABC1009F0AD3 /* SkiingTableViewCell.xib in Resources */,
+				E9370B451F34572A009F0AD3 /* AthleteProfileBioTableViewCell.xib in Resources */,
+				E9370B521F34AAF9009F0AD3 /* BasketballTableViewCell.xib in Resources */,
+				E9F1197B1F050012003FB4A0 /* Assets.xcassets in Resources */,
+				E9BC2ACC1F4E91F600E12BA4 /* CustomPage.xib in Resources */,
+				E9F119761F050012003FB4A0 /* Main.storyboard in Resources */,
+				E9370B4E1F349FC9009F0AD3 /* SoccerTableViewCell.xib in Resources */,
+				E9370B721F34AB75009F0AD3 /* HockeyTableViewCell.xib in Resources */,
+				E9370B6A1F34AB58009F0AD3 /* VolleyballTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F119821F050013003FB4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F1198D1F050013003FB4A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2772E9EAFB7B19A48BDB81C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthleticaTests/Pods-AthleticaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28569C251F78510F32A249B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C1E638DC02D04944D2EF43A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthleticaUITests/Pods-AthleticaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAB2EC23EC63C33100115C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A03CB19F308CCBF31F7A0919 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athletica/Pods-Athletica-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC2E7A469163942F4727699 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthleticaUITests/Pods-AthleticaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7C416F96208D453E1B3B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E95FB9881F15287500F7C88F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1e3680ebd0de7b85b7d2d6b9562042456305ce06 94c86213bab10fcc867601b44a15253f59e7294ec9aa4bf230b419da7fe2be5a";
+		};
+		EB90BF94FA88B505622E5E6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Athletica/Pods-Athletica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE92044D7FA87F9924D87DAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AthleticaTests/Pods-AthleticaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9F119691F050012003FB4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B84E331F4747770019B165 /* ImageUtil.swift in Sources */,
+				E958BD361F1E3D3900B454D7 /* SearchPeopleTableViewCell.swift in Sources */,
+				E958BD321F1DFBB200B454D7 /* CategoryCollectionViewCell.swift in Sources */,
+				E9393AFD1F3AEEFD0004F732 /* Kudo.swift in Sources */,
+				E9BC2AD11F4F1BB600E12BA4 /* SendFeedbackViewController.swift in Sources */,
+				E96BC5C61F1FF06A0007CDAA /* ProProfileViewController.swift in Sources */,
+				E9393B071F3B76270004F732 /* FollowersTableViewCell.swift in Sources */,
+				E930C0EC1F06E05B00BB5D82 /* Reachability.swift in Sources */,
+				E930C0E41F06A0D300BB5D82 /* Util.swift in Sources */,
+				E931B26D1F05771100095225 /* MyFloatingLabelTextField.swift in Sources */,
+				E9370B921F34C2FE009F0AD3 /* AthleteProfileHonorsTableViewCell.swift in Sources */,
+				E92710B01F0BE6D900CC5B18 /* UIImage+ResizeAdditions.m in Sources */,
+				E986165D1F33592A00A60670 /* AthleteEditProfileViewController.swift in Sources */,
+				E9BC2AC21F4DF65F00E12BA4 /* TermsViewController.swift in Sources */,
+				E96BC5C91F208B290007CDAA /* FanProfileViewController.swift in Sources */,
+				E954DE611F266AB200E0A22A /* ScheduleStreamViewController.swift in Sources */,
+				E9885F3F1F1143DE001C1CA7 /* LiveStreamViewController.swift in Sources */,
+				E9885F6B1F123880001C1CA7 /* FirebaseUtil.swift in Sources */,
+				E9370B551F34AB09009F0AD3 /* SwimmingTableViewCell.swift in Sources */,
+				E9370B8A1F34C121009F0AD3 /* AthleteProfileVolunteeringTableViewCell.swift in Sources */,
+				E9E967191F496F0300B180D8 /* ApproveKudosViewController.swift in Sources */,
+				E9BC2AC41F4E885C00E12BA4 /* OnboardViewController.swift in Sources */,
+				E9370B4D1F349FC9009F0AD3 /* SoccerTableViewCell.swift in Sources */,
+				E93A93A51F062ADB0039BC94 /* AthleteLoginViewController.swift in Sources */,
+				E958BD2F1F1D4B7800B454D7 /* SearchViewController.swift in Sources */,
+				E958BD3C1F1E66AF00B454D7 /* UpcomingStreamsTableViewCell.swift in Sources */,
+				E9370B6D1F34AB67009F0AD3 /* LacrosseTableViewCell.swift in Sources */,
+				E9370B481F34679A009F0AD3 /* AthleteProfileSchoolTableViewCell.swift in Sources */,
+				E930C0F41F09977A00BB5D82 /* AthleteProfileViewController.swift in Sources */,
+				E96DF56C1F4A19B80079E03A /* ChatContainerViewController.swift in Sources */,
+				E9370B691F34AB58009F0AD3 /* VolleyballTableViewCell.swift in Sources */,
+				E932F9631F0A860100F475A3 /* ExpyTableView.swift in Sources */,
+				E96DF5681F49D7120079E03A /* NewMessageTableViewCell.swift in Sources */,
+				E99CF3991F470686001C3176 /* GiveKudosViewController.swift in Sources */,
+				E9F119791F050012003FB4A0 /* Athletica.xcdatamodeld in Sources */,
+				E930C0F21F095D2000BB5D82 /* AthleteArticleViewController.swift in Sources */,
+				E9370B611F34AB3F009F0AD3 /* SoftballTableViewCell.swift in Sources */,
+				E9270EA71F0AE33A00CC5B18 /* AthleteStreamsViewController.swift in Sources */,
+				E930C0E21F06926C00BB5D82 /* AthleteMenuViewController.swift in Sources */,
+				E9370B7D1F34ABB3009F0AD3 /* GymnasticsTableViewCell.swift in Sources */,
+				E9BC752C1F58004F002CB501 /* PaidSubscription.swift in Sources */,
+				E9370B811F34ABC1009F0AD3 /* SkiingTableViewCell.swift in Sources */,
+				E9393AF91F39DDED0004F732 /* AthleteProfileStreamsTableViewCell.swift in Sources */,
+				E958BD381F1E3D7B00B454D7 /* SearchStreamsTableViewCell.swift in Sources */,
+				E99CF3951F459D3B001C3176 /* ViewAthleteViewController.swift in Sources */,
+				E9BC2ACF1F4E91F600E12BA4 /* CustomOverlay.swift in Sources */,
+				E932F9661F0A8C5D00F475A3 /* ProfileAboutTableViewCell.swift in Sources */,
+				E99CF38F1F459D10001C3176 /* ViewCoachViewController.swift in Sources */,
+				E911440A1F43571D00FCD05B /* OneSignalUtil.swift in Sources */,
+				E931B26B1F056FA900095225 /* AthleteSignupViewController.swift in Sources */,
+				E9370B791F34AB9C009F0AD3 /* WaterpoloTableViewCell.swift in Sources */,
+				E931B2691F056F8200095225 /* BaseViewController.swift in Sources */,
+				E930C0EB1F06E05B00BB5D82 /* Constants.swift in Sources */,
+				E9F9B2441F4C85B2003C4237 /* EmailUtil.swift in Sources */,
+				E9885F671F116BE8001C1CA7 /* Stream.swift in Sources */,
+				E9393AFF1F3B5CEC0004F732 /* FollowingViewController.swift in Sources */,
+				E96BC5C31F1FD7E80007CDAA /* SettingsViewController.swift in Sources */,
+				E9370B441F34572A009F0AD3 /* AthleteProfileBioTableViewCell.swift in Sources */,
+				E954DE5D1F2647C100E0A22A /* CoachProfileViewController.swift in Sources */,
+				E958BD3A1F1E594200B454D7 /* UpcomingStreamsViewController.swift in Sources */,
+				E9E967151F48AA4D00B180D8 /* MessagingUser.swift in Sources */,
+				E986165B1F33472700A60670 /* AthleteProfile.swift in Sources */,
+				E9393B011F3B748C0004F732 /* FollowingTableViewCell.swift in Sources */,
+				E9B84E2F1F4738780019B165 /* FavoritesViewController.swift in Sources */,
+				E930C0E61F06A9FA00BB5D82 /* ChooseProfileViewController.swift in Sources */,
+				E9270EAB1F0B7F1300CC5B18 /* StartLiveStreamViewController.swift in Sources */,
+				E9370B591F34AB20009F0AD3 /* TrackTableViewCell.swift in Sources */,
+				E96BC5CC1F20DD980007CDAA /* CoachSignupViewController.swift in Sources */,
+				E9370B8E1F34C161009F0AD3 /* AthleteProfileHighlightsTableViewCell.swift in Sources */,
+				E9B84E311F473BA20019B165 /* CoachEditProfileViewController.swift in Sources */,
+				E9393AFB1F3AD7E20004F732 /* AthleteProfileKudosTableViewCell.swift in Sources */,
+				E99CF3911F459D21001C3176 /* ViewFanViewController.swift in Sources */,
+				E9BC2ABE1F4DED0C00E12BA4 /* PrivacyViewController.swift in Sources */,
+				E9370B651F34AB4B009F0AD3 /* GolfTableViewCell.swift in Sources */,
+				E9370B711F34AB75009F0AD3 /* HockeyTableViewCell.swift in Sources */,
+				E9370B751F34AB8B009F0AD3 /* RowingTableViewCell.swift in Sources */,
+				E96DF56A1F49DB650079E03A /* ChatViewController.swift in Sources */,
+				E9F9B2461F4C9637003C4237 /* ReportUserViewController.swift in Sources */,
+				E9E967131F489A9B00B180D8 /* MessagesViewController.swift in Sources */,
+				E9F119731F050012003FB4A0 /* ViewController.swift in Sources */,
+				E9E967171F48D5B700B180D8 /* MessagesTableViewCell.swift in Sources */,
+				E932F9681F0A8C7F00F475A3 /* ProfileAboutDetailTableViewCell.swift in Sources */,
+				E9BC2ACD1F4E91F600E12BA4 /* CustomPage.swift in Sources */,
+				E9270EA91F0B4CED00CC5B18 /* StreamTableViewCell.swift in Sources */,
+				E9393B0B1F402D5E0004F732 /* AWSUtil.swift in Sources */,
+				E9173B5A1F40D9B700391BF6 /* AuthorizedUsersViewController.swift in Sources */,
+				E958BD3E1F1F4C7100B454D7 /* UpgradeViewController.swift in Sources */,
+				E9173B5C1F418D4900391BF6 /* BlockedUsersViewController.swift in Sources */,
+				E9E9671B1F49D50500B180D8 /* NewMessageViewController.swift in Sources */,
+				E96DF56E1F4ACA2E0079E03A /* ViewImageViewController.swift in Sources */,
+				E93A93A71F0635880039BC94 /* AthleleForgotPasswordViewController.swift in Sources */,
+				E9BC75291F57FF87002CB501 /* IAPUtil.swift in Sources */,
+				E9370B511F34AAF9009F0AD3 /* BasketballTableViewCell.swift in Sources */,
+				E95813A51F29E8B900B05965 /* CheckBox.swift in Sources */,
+				E95813A31F29E5CB00B05965 /* InviteCoachesTableViewCell.swift in Sources */,
+				E9370B5D1F34AB2E009F0AD3 /* TennisTableViewCell.swift in Sources */,
+				E99CF3931F459D2D001C3176 /* ViewProViewController.swift in Sources */,
+				E9BC75271F57C44E002CB501 /* NetworkActivityIndicatorManager.swift in Sources */,
+				E930C0F01F07CF7800BB5D82 /* ArticleTableViewCell.swift in Sources */,
+				E9F119711F050012003FB4A0 /* AppDelegate.swift in Sources */,
+				E930C0E01F06911000BB5D82 /* AthleteNewsViewController.swift in Sources */,
+				E958139E1F27AD2900B05965 /* AthleteScheduleStreamViewController.swift in Sources */,
+				E9885F691F116DA5001C1CA7 /* Network.swift in Sources */,
+				E9393B051F3B755B0004F732 /* FollowersViewController.swift in Sources */,
+				E930C0EE1F07C97300BB5D82 /* Article.swift in Sources */,
+				E958BD2D1F1C5F7C00B454D7 /* PlayerViewController.swift in Sources */,
+				E9BC752E1F587E5E002CB501 /* Request.swift in Sources */,
+				E958BD341F1E30CA00B454D7 /* User.swift in Sources */,
+				E95813A11F29E3FC00B05965 /* AthleteInviteCoachesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F119801F050013003FB4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F119891F050013003FB4A0 /* AthleticaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F1198B1F050013003FB4A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F119941F050013003FB4A0 /* AthleticaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9F119861F050013003FB4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9F1196C1F050012003FB4A0 /* Athletica */;
+			targetProxy = E9F119851F050013003FB4A0 /* PBXContainerItemProxy */;
+		};
+		E9F119911F050013003FB4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9F1196C1F050012003FB4A0 /* Athletica */;
+			targetProxy = E9F119901F050013003FB4A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9F119741F050012003FB4A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9F119751F050012003FB4A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9F1197C1F050012003FB4A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9F1197D1F050012003FB4A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9F119961F050013003FB4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9F119971F050013003FB4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9F119991F050013003FB4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152E80B620371C3B8E8AD4C8 /* Pods-Athletica.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Athletica/Athletica.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L7582TM84M;
+				INFOPLIST_FILE = Athletica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prebuilt/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.Athletica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1f071c66-481f-4d12-91c1-df13b9d0a540";
+				PROVISIONING_PROFILE_SPECIFIER = distAthletica;
+				SWIFT_OBJC_BRIDGING_HEADER = "Athletica/Athletica-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E9F1199A1F050013003FB4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9FC021D70B9E5254E1EE22C /* Pods-Athletica.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Athletica/Athletica.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = L7582TM84M;
+				INFOPLIST_FILE = Athletica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prebuilt/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.Athletica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1f071c66-481f-4d12-91c1-df13b9d0a540";
+				PROVISIONING_PROFILE_SPECIFIER = distAthletica;
+				SWIFT_OBJC_BRIDGING_HEADER = "Athletica/Athletica-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E9F1199C1F050013003FB4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DCDC1C5AC72BB06998BD32 /* Pods-AthleticaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AthleticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.AthleticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athletica.app/Athletica";
+			};
+			name = Debug;
+		};
+		E9F1199D1F050013003FB4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8295CDC332DBFB1EB919C792 /* Pods-AthleticaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AthleticaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.AthleticaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Athletica.app/Athletica";
+			};
+			name = Release;
+		};
+		E9F1199F1F050013003FB4A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45DF4472987C143013549AE /* Pods-AthleticaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AthleticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.AthleticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Athletica;
+			};
+			name = Debug;
+		};
+		E9F119A01F050013003FB4A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAAA233DE31728069F0BAA78 /* Pods-AthleticaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AthleticaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dena.AthleticaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Athletica;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9F119681F050012003FB4A0 /* Build configuration list for PBXProject "Athletica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F119961F050013003FB4A0 /* Debug */,
+				E9F119971F050013003FB4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F119981F050013003FB4A0 /* Build configuration list for PBXNativeTarget "Athletica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F119991F050013003FB4A0 /* Debug */,
+				E9F1199A1F050013003FB4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F1199B1F050013003FB4A0 /* Build configuration list for PBXNativeTarget "AthleticaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F1199C1F050013003FB4A0 /* Debug */,
+				E9F1199D1F050013003FB4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F1199E1F050013003FB4A0 /* Build configuration list for PBXNativeTarget "AthleticaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F1199F1F050013003FB4A0 /* Debug */,
+				E9F119A01F050013003FB4A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9F119771F050012003FB4A0 /* Athletica.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9F119781F050012003FB4A0 /* Athletica.xcdatamodel */,
+			);
+			currentVersion = E9F119781F050012003FB4A0 /* Athletica.xcdatamodel */;
+			path = Athletica.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9F119651F050012003FB4A0 /* Project object */;
+}

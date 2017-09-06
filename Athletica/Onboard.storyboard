@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboard View Controller-->
+        <scene sceneID="GDn-Xd-BrB">
+            <objects>
+                <viewController storyboardIdentifier="OnboardViewController" modalTransitionStyle="crossDissolve" id="lOE-dY-QY5" customClass="OnboardViewController" customModule="Athletica" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mgl-X3-UJh"/>
+                        <viewControllerLayoutGuide type="bottom" id="YhU-nI-x7Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wnq-Nc-TN3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-Vw-qDe" customClass="SwiftyOnboard" customModule="SwiftyOnboard">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jgb-Vw-qDe" firstAttribute="top" secondItem="Wnq-Nc-TN3" secondAttribute="top" id="8Y6-FQ-v4m"/>
+                            <constraint firstAttribute="trailing" secondItem="Jgb-Vw-qDe" secondAttribute="trailing" id="FZg-ig-8Py"/>
+                            <constraint firstItem="Jgb-Vw-qDe" firstAttribute="leading" secondItem="Wnq-Nc-TN3" secondAttribute="leading" id="PJi-4v-ZBN"/>
+                            <constraint firstItem="YhU-nI-x7Q" firstAttribute="top" secondItem="Jgb-Vw-qDe" secondAttribute="bottom" id="kNv-mK-sGc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swiftyOnboard" destination="Jgb-Vw-qDe" id="Cji-hr-UBK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYh-vG-70X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="134"/>
+        </scene>
+    </scenes>
+</document>

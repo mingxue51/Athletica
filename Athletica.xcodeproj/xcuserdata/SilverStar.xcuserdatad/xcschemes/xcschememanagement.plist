@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Athletica.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>OneSignalNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E90C67471F2F5F8D0057431A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E95DC5EA1F2F56080019F0A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E95DC5F91F2F565E0019F0A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9880AC01F2F54BC0041D722</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9F1196C1F050012003FB4A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9F119831F050013003FB4A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9F1198E1F050013003FB4A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

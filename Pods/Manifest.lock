@@ -1,0 +1,152 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AWSCognito (2.5.9):
+    - AWSCore (= 2.5.9)
+  - AWSCore (2.5.9)
+  - AWSS3 (2.5.9):
+    - AWSCore (= 2.5.9)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
+  - FeedKit (6.0.2)
+  - Firebase/Auth (4.0.2):
+    - Firebase/Core
+    - FirebaseAuth (= 4.0.0)
+  - Firebase/Core (4.0.2):
+    - FirebaseAnalytics (= 4.0.1)
+    - FirebaseCore (= 4.0.2)
+  - Firebase/Database (4.0.2):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.0.0)
+  - Firebase/Messaging (4.0.2):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.0)
+  - Firebase/Storage (4.0.2):
+    - Firebase/Core
+    - FirebaseStorage (= 2.0.0)
+  - FirebaseAnalytics (4.0.1):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseAuth (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (4.0.2):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseDatabase (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - FirebaseStorage (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMSessionFetcher/Core (1.1.10)
+  - IQKeyboardManager (4.0.11)
+  - JHTAlertController (0.2.4)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Kingfisher (3.10.1)
+  - MarqueeLabel/Swift (3.1.1)
+  - MBProgressHUD (1.0.0)
+  - NVActivityIndicatorView (3.6.1)
+  - OneSignal (2.5.4)
+  - ProgressHUD (2.4)
+  - Protobuf (3.3.0)
+  - SideMenu (2.3.2)
+  - SkyFloatingLabelTextField (3.1.0)
+  - SwiftGifOrigin (1.6.1)
+  - SwiftyOnboard (1.3.3)
+  - SwiftyStoreKit (0.10.4)
+  - TOCropViewController (2.0.12)
+  - TTGSnackbar (1.5.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AWSCognito
+  - AWSS3
+  - Crashlytics
+  - Fabric
+  - FeedKit
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Database
+  - Firebase/Messaging
+  - Firebase/Storage
+  - IQKeyboardManager
+  - JHTAlertController
+  - JSQMessagesViewController
+  - Kingfisher
+  - MarqueeLabel/Swift
+  - MBProgressHUD
+  - NVActivityIndicatorView
+  - OneSignal (< 3.0, >= 2.5.2)
+  - ProgressHUD
+  - SideMenu
+  - SkyFloatingLabelTextField
+  - SwiftGifOrigin
+  - SwiftyOnboard
+  - SwiftyStoreKit
+  - TOCropViewController
+  - TTGSnackbar
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AWSCognito: 5dfe4120e7f77b2e77396b4532e4aacacc4ae08d
+  AWSCore: c71840dd51f271dc0af8de8fd6f352767ebde8b4
+  AWSS3: c36b91edb50ccd676be4a92836bb72f0c2ac312b
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FeedKit: 050e379d01191699171ea5fcfcae7080ed0f9223
+  Firebase: c7ad0731eab26d18a3fc547dd048b0f7cd9c63ae
+  FirebaseAnalytics: 4d7040fefc3cd8b291cde35f12cf063d7963f15d
+  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
+  FirebaseCore: 1a8bf6c795ad07d2918278657954ffd2552e9c17
+  FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
+  FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  JHTAlertController: 8999fdf41c60a3d6698a3415ff1448f4ce4680e5
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  MarqueeLabel: 17c5148b6f7144498eff5e0d286bd2e7e866f972
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  OneSignal: da994bcf6a2efbdceaf71e389e1d05245c562899
+  ProgressHUD: 4b66b0df0e08519c5c7283a198fd2867a114c95a
+  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
+  SideMenu: 3fa07dd05d4bade2b6f9889fb1877e312e1ba319
+  SkyFloatingLabelTextField: 26a92ad407044dd5a7c3e4e348738ff0991514fe
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftyOnboard: 349a04c16751c26d63c80ee394e3250b2d023816
+  SwiftyStoreKit: f38427d347c8ad0a0d250ae2b64f9f2fcde0569c
+  TOCropViewController: e6e31b38d785a901e5651a1e7fff71bcda6c5214
+  TTGSnackbar: ca69045c72188fef27f575581052d72aff15abe2
+
+PODFILE CHECKSUM: 7011ab4cfed00610c5370bd42422e21527927997
+
+COCOAPODS: 1.2.1
